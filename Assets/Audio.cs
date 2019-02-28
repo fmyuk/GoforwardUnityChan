@@ -20,7 +20,7 @@ public class Audio : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "block")
+        if(collision.gameObject.tag == "block" || collision.gameObject.tag == "Ground")
         {
             audioSource.PlayOneShot(sound1);
         }
